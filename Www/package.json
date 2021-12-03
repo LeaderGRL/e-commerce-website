@@ -1,0 +1,30 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "form-data": "^4.0.0",
+    "jquerry": "^0.0.1-security",
+    "nodemon": "^2.0.15",
+    "php-express": "0.0.3",
+    "pug": "^3.0.2",
+    "require": "^2.4.20",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.php",
+    "build": "parcel build index.php"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

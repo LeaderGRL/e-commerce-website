@@ -1,0 +1,124 @@
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>E-Commerce Website</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        - var style = '/' + link + 'style.css'
+        link(href = style, rel = "stylesheet")
+        //- <link href= `${style}` rel="stylesheet">
+        //- <script>
+        //-     document.getElementById('divA').addEventListener('click', function() {
+        //-     alert('Clicked A');
+        //-     });
+        //- </script>
+    </head>
+
+    <body class = "bg-gray-800">
+        <main class = "h-full">
+            <div class = "grid justify-items-center mt-8">
+                <div class = "flex inline-block">
+                    <div class = "item-center justify-items-center font-mono flex">
+                        <p class = "text-5xl text-white">E-Commerce Website</p>
+                    </div>
+                    <div class = "absolute flex right-10 -mt-2 inline-block">
+                        <div class = "mr-8">
+                            a(class = "grid justify-items-center", href = '/' + link + 'connexion')
+                                <img src = "../../../img/user.png" class = "w-8"></img>
+                                <p class = "text-white">#{pseudo}</p>
+                            </a>
+                        </div>
+                        <div class = "">
+                            <a href="#responive-header" class = "grid justify-items-center">
+                                <img src = "../../../img/cart.png" class = "w-8"></img>
+                                <p class = "text-white">panier</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <nav class = "flex item-center justify-between mt-8">
+                    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                        <div class="text-sm lg:flex-grow text-white text-2xl">
+                            a(class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-20 border border-transparent rounded-full py-3 px-6 hover:bg-white", href='/' + link) Accueil
+                            a(class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-20 border border-transparent rounded-full py-3 px-6 hover:bg-white", href='/' + link + 'produit') Produit
+                            a(class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-20 border border-transparent rounded-full py-3 px-6 hover:bg-white", href='/' + link + 'faq') FAQ
+                            a(class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-20 border border-transparent rounded-full py-3 px-6 hover:bg-white", href='/' + link + 'contact') Contact
+
+                            //- <a href="link" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-20 border border-transparent rounded-full py-3 px-6 hover:bg-white">Accueil</a>
+                            //- <a href="produit" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-20 border border-transparent rounded-full py-3 px-6 hover:bg-white">Produits</a>
+                            //- <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-20 border border-transparent rounded-full py-3 px-6 hover:bg-white">FAQ</a>
+                            //- <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-20 border border-transparent rounded-full py-3 px-6 hover:bg-white">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class = "flex">
+                <div class = "w-60 ml-20 mt-10 rounded-lg ">
+                    <nav class = "item-center justify-between -ml-10">
+                        <ul class = "space-y-10 text-white grid justify-items-center">
+                            <li class = "">
+                                //- <a href="/unisex" class="block lg:mt-0 text-teal-200 hover:text-black">Unisex</a>
+                                <br>
+                                a(class = "block lg:mt-0 text-teal-200 hover:text-black", href = '/' + link + 'produit/unisex') Unisex
+                            </li>
+                            <li>
+                                //- <a href="/femme" class="block lg:mt-0 text-teal-200 hover:text-black">Femmes</a>
+                                a(class = "block lg:mt-0 text-teal-200 hover:text-black", href = '/' + link + 'produit/femme') Femmes
+                            </li>
+                            <li>
+                                //- <a href="/homme" class="block lg:mt-0 text-teal-200 hover:text-black">Hommes</a>
+                                a(class = "block lg:mt-0 text-teal-200 hover:text-black", href = '/' + link + 'produit/homme') Hommes
+                            </li>
+                            <li>
+                                //- <a href="accessoire" class="block lg:mt-0 text-teal-200 hover:text-black">Accessoires</a>
+                                a(class = "block lg:mt-0 text-teal-200 hover:text-black", href = '/' + link + 'produit/accessoire') Accessoires
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id = "product" class = "w-3/4 float-right mt-10 ml-10 ">
+                    each product in products ? products : []
+                        <div id = "prod" class = "w-80 h-96 ml-5 mt-5 bg-gray-700 float-left position: relative grid justify-items-center shadow-2xl">
+                            <div id = product2 class = 'position: absolute top-8 grid justify-items-center'>
+                                //- <img class = "" src = #{products[0]}>
+                                if id != null
+                                    img(src = '../img/' + product[0] class = 'allign-center justify-center h-60 overflow-hidden')
+                                else
+                                    img(src = 'img/' + product[0] class = 'allign-center justify-center h-60 overflow-hidden')
+                                //- <form class = "form_product w-full ">
+                                //-     <select list="size" value="M" name="size" id = "prod_link" class = "add_product_size">
+                                //-     <datalist id="size" class = "">
+                                //-         <option value="XS">XS</option>
+                                //-         <option value="S">S</option>
+                                //-         <option value="M">M</option>
+                                //-         <option value="L">L</option>
+                                //-         <option value="XL">XL</option>
+                                //-         <option value="XXL">XXL</option>
+                                //-     </datalist>
+                                //-     <input type="number" value=0 id = "prod_link" class = "add_product_nb ">
+                                //-     <input type="submit" value="Ajouter" id = "prod_link" href = "#test" class = "add_product">
+                                //- </form>
+                            </div>
+                            <form class = "form_product w-full position: absolute bottom-20 grid justify-items-center h-7">
+                                <select list="size" value="M" name="size" id = "prod_link" class = "add_product_size">
+                                <datalist id="size" class = "">
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </datalist>
+                                <input type="number" value=0 id = "prod_link" class = "add_product_nb ">
+                                <input type="submit" value="Ajouter" id = "prod_link" href = "#test" class = "add_product">
+                            </form>
+                            <div class = "w-80 h-12 bg-gray-500 position: absolute bottom-0 grid justify-items-center">
+                                <p class = allign-center>#{product[1]}</p>
+                                <p class = "allign-center font-bold">#{product[2]}€</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

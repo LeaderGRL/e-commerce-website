@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>E-Commerce Website</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="../../css/style.css" rel="stylesheet">
+    </head>
+
+    <body class = "bg-gray-800">
+        <div class = "grid justify-items-center mt-8">
+            <div class = "flex inline-block">
+                <div class = "item-center justify-items-center font-mono flex">
+                    <p class = "text-5xl text-white">E-Commerce Website</p>
+                </div>
+            </div>
+            <div class= "mt-16 grid justify-items-center">
+                <form name="inscription" method="post" action="inscr">
+                    <div class = "grid justify-items-center">
+                        <h1 class="text-white text-2xl">inscription</h1>
+                    </div>
+                    <div class = "mt-4">
+                        <input type="pseudo" name="pseudo" id="pseudo" value="pseudo" required class="rounded-full py-3 px-6">
+                    </div>
+                    <div class = "mt-4">
+                        <input type="name" name="lastname" id="lastname" value="Nom" required class="rounded-full py-3 px-6">
+                    </div>
+                    <div class = "mt-4">
+                        <input type="firstname" name="firstname" id="firstname" value="Prénom" required class="rounded-full py-3 px-6">
+                    </div>
+                    <div class = "mt-4">
+                        <input type="number" name="age" id="age" value="19" required class="rounded-full py-3 px-6">
+                    </div>
+                    <div class = "mt-4">
+                        <input type="country" name="country" id="country" value="France" required class="rounded-full py-3 px-6">
+                    </div>
+                    <div class = "mt-4">
+                        <input type="city" name="city" id="city" value="Paris" required class="rounded-full py-3 px-6">
+                    </div>
+                    <div class = "mt-4">
+                        <input type="adress" name="address" id="address" value="27 Rue Raoul Servant" required class="rounded-full py-3 px-6">
+                    </div>
+                    <div class = "mt-4">
+                        <input type="adress2" name="address2" id="address2" value="Etage 5" class="rounded-full py-3 px-6">
+                    </div>
+                    <div class = "mt-4">
+                        <input type="tel" name="phone" id="phone" value="Numéro de téléphone" required class="rounded-full py-3 px-6">
+                    </div>
+                    <div class = "mt-4">
+                        <input type="email" name="mail" id="mail" value="Email" required class="rounded-full py-3 px-6">
+                    </div>
+                    <div class = "mt-4">
+                        <input type="password" name="password" id="password" value="Mot de passe" minlength="8" required class="rounded-full py-3 px-6">
+                    </div>
+                    <div class = "mt-4 grid justify-items-center">
+                        <input type="submit" name="submit" value="inscription" class = "rounded-full py-3 px-6 flex">
+                    </div>
+                </form>
+            </div>
+        </div>
+        //- <?php
+        //-     require '../../backend/inscription/inscription.php';
+
+        //-     if(isset($_POST['submit'])){
+        //-         $inscription = new inscription;
+        //-         $inscription -> connexion();
+        //-         $inscription -> inscriptionQuerry();
+        //-     }
+        //- ?>
+    </body>
+</html>

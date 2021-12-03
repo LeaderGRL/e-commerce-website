@@ -1,0 +1,15 @@
+{
+    "name": "leader/www",
+    "require": {
+        "michelf/php-markdown": "^1.9"
+    },
+    "autoload": {
+            "\\Leader\\Www\\": "src/"
+    },
+    "authors": [
+        {
+            "name": "Leader",
+            "email": "jordangrilly@gmail.com"
+        }
+    ]
+}
